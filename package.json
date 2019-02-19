@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Siddharth Retiwala",
   "license": "MIT",
+  "engines": {
+    "node": "10.13.0"
+  },
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack --watch",
