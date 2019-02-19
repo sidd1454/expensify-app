@@ -5,7 +5,8 @@
   "author": "Siddharth Retiwala",
   "license": "MIT",
   "engines": {
-    "node": "10.13.0"
+    "node": "10.13.0",
+    "yarn": "1.13.0"
   },
   "scripts": {
     "serve": "live-server public/",
