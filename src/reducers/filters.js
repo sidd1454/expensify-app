@@ -30,7 +30,7 @@ export default (state = filtersReducerDefaultState, action) => {
                 ...state,
                 startDate: action.startDate
             }; 
-        case 'SET_END_DAY':
+        case 'SET_END_DATE':
             return {
                 ...state,
                 endDate: action.endDate

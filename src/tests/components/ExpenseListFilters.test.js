@@ -44,12 +44,12 @@ test('should handle text change', () => {
 // });
 
 test('should sort by date', () => {
-    const value = 'date'
+    const value = 'date';
     wrapper.setProps({
         filters: altFilters
     });
     wrapper.find('select').simulate('change', {
         target: { value }
     });
-    expect.(sortByDate).toHaveBeenLastCalled();
+    expect(sortByDate).toHaveBeenLastCalled();
 });
