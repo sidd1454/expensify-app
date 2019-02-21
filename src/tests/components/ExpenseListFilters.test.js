@@ -32,16 +32,16 @@ test('should handle text change', () => {
     expect(setTextFilter).toHaveBeenLastCalledWith(value);
 });
 
-// test('should render ExpenseListFilters correctly', () => {
-//     expect(toJSON(wrapper)).toMatchSnapshot();
-// });
+test('should render ExpenseListFilters correctly', () => {
+    expect(toJSON(wrapper)).toMatchSnapshot();
+});
 
-// test('should render ExpenseListFilters with alt data correctly', () => {
-//     wrapper.setProps({
-//         filters: altFilters
-//     });
-//     expect(toJSON(wrapper)).toMatchSnapshot();
-// });
+test('should render ExpenseListFilters with alt data correctly', () => {
+    wrapper.setProps({
+        filters: altFilters
+    });
+    expect(toJSON(wrapper)).toMatchSnapshot();
+});
 
 test('should sort by date', () => {
     const value = 'date';
@@ -51,5 +51,5 @@ test('should sort by date', () => {
     wrapper.find('select').simulate('change', {
         target: { value }
     });
-    expect(sortByDate).toHaveBeenLastCalled();
+    expect(sortByDate).toHaveBeenLastCalledWith();
 });

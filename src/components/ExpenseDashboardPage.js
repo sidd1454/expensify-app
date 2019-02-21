@@ -1,19 +1,14 @@
 import React from 'react';
 import ExpenseList from './ExpenseList';
 import ExpenseListFilters from './ExpenseListFilters';
+import ExpensesSummary from './ExpensesSummary';
 
-class ExpenseDashboardPage extends React.Component {
-    constructor(props){
-        super(props);
-        this.ExpenseDashboardPage = this.ExpenseDashboardPage.bind(this);
-    }
-}
-
-ExpenseDashboardPage = () => (
+const ExpenseDashboardPage = () => (
     <div>
-        <ExpenseListFilters />
-        <ExpenseList />
+      <ExpensesSummary />
+      <ExpenseListFilters />
+      <ExpenseList />
     </div>
-);
-
+  );
+  
 export default ExpenseDashboardPage;
